@@ -1,0 +1,157 @@
+.split-line{
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: blue;
+}
+body
+{
+    text-align: center;
+}
+.container {
+	margin: 30px auto;
+	width: 400px;
+	height: 100px;
+    background-color: grey;
+    box-sizing: border-box;
+
+}
+.container div{
+    float: right;
+}
+.item {
+    padding: 5px 5px;   
+    background-color: hotpink;
+    font-size: 22px;
+    border: 1px solid black;
+}
+.flexend {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.end {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.space-around {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.space-btw {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.space-evenly {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.stretch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baseline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.order {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.container.order :nth-child(1){
+    order: 2;
+}
+.container.order :nth-child(6){
+    order: -1;
+}
+
+.grow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.container.grow :nth-child(1){
+    flex-grow: 1;
+}
+.container.grow :nth-child(2){
+    flex-grow: 3;
+}
+.container.grow :nth-child(3){
+    flex-grow: 1;
+}
+.container.grow :nth-child(4){
+    flex-grow: 1;
+}
+
+.shrink {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+.container.shrink div{
+    width: 200px;
+    flex-shrink: 1;
+}
+
+.container.shrink :nth-child(2){
+    flex-shrink: 2;
+}
+
+.basis {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+
+}
+
+.container.basis div{
+    flex-grow: 1;
+    /* flex-basis: auto; */
+    flex-basis: 100px;
+}

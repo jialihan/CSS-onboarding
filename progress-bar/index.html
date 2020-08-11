@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress bar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="bar-container">   
+            <div class="bar">
+            </div>
+        </div>
+        <div class="percentage">0%</div>
+        </div>
+        <button onclick="javascriptFillBar(2)">Start-js</button>
+        <button onclick="cssFillBar(2)">Start-css</button>
+        <div>Please refresh page if you want to switch buttons !</div>
+    </div>
+    
+ <style>
+     .container{
+         margin: 30px auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         align-content: space-around;
+         height: 150px;
+         width: 25%;
+         background-color: gainsboro;
+         
+     }
+     .bar{
+         background-color: green;
+         width: 0%;
+         height: 100%;
+     }
+     .bar-container{
+         height: 100%;
+         background-color: darkgrey;
+         width: 250px;
+
+     }
+     .row{
+         display: flex;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         align-items: center;
+        height: 30px;
+     }
+     .percentage{
+         height: 100%;
+         margin-left: 10px;
+         font-size: 20px;
+     }
+</style>
+    <script>
+        function javascriptFillBar(time)
+        {
+            console.log('js button clicked!'+ time);
+            var step = 0;
+            var timer = setInterval(()=>{
+                step++;
+                var bar = document.querySelector('.bar');
+                bar.style.width = step + '%';
+                document.querySelector('.percentage').textContent = step+'%';
+                if(step === 100)
+                {
+                     clearInterval(timer);  
+                }
+            }, time * 1000 / 100);
+           
+        }
+        function cssFillBar(time)
+        {
+            console.log('css button clicked!'+ time);
+            document.querySelector('.percentage').style.display = 'none';
+            var bar = document.querySelector('.bar');
+            bar.style.width = '100%';
+            bar.style.transition = `${time}s linear width`;
+        }
+    </script>
+</body>  
+    
+</html>

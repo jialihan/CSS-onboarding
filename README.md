@@ -8,3 +8,6 @@ morden css features practice project
 
 ### 3. Animation - Flip Counter  example
 <img src="./flip-counter/cover.gif" >
+
+### 4. Image Slider - javascript control
+<img src="./image-slider/cover.gif" width="300" height="244">

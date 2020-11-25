@@ -14,4 +14,4 @@ morden css features practice project
 
 ### 5. CSS Grid - Convention Layout
 
-<img src ="./CSS-Grid/cover.png" >
+<img src ="./CSS-Grid/01-simple-grid/cover.png" >

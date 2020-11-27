@@ -1,0 +1,21 @@
+.bar {
+   height: 100px;
+   width: 100%;
+   background: pink;
+   font-size: 24px;
+ }
+ 
+ .header{
+   height: 100px;
+   width: 100%;
+   background: gray;
+   font-size: 24px;
+   position: sticky;
+   top: 0;
+ }
+ .content{
+     height: 600px;
+   width: 100%;
+   background: lightgreen;
+   font-size: 24px;
+ }

@@ -1,0 +1,31 @@
+.header {
+   position: fixed;
+   top: 0;
+   height: 50px;
+   background: blue;
+   width: 100%;
+   line-height: 50px;
+   text-align: center;
+   font-size: 26px;
+   color:white;
+ }
+ 
+ .main {
+    height: 500px;
+    background:gray;
+    width: 100%;
+     line-height: 500px;
+   text-align: center;
+   font-size: 26px;
+   color:white;
+ }
+ 
+ .footer {
+    height: 100px;
+    background: black;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 26px;
+    color:white;
+ }

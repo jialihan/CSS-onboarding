@@ -17,3 +17,11 @@ morden css features practice project
 <img src ="./CSS-Grid/01-simple-grid/cover.png" >
 
 ### 6. CSS Position
+
+
+### 7. NameCard felxbox example
+-  use flex box
+-  use emoj
+
+<img src="./NameCard/flexbox.png" width="436" height="215">
+

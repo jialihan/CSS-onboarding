@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>Float without clearfix</h1>
+    <div class="container">
+        <div class="item1 left">float left</div>
+        <div class="item2 right">float right</div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+    <h1>outside text is affected</h1>
+    <h1 class="clear-right">outside text with clear</h1>
+    <h1>container clearfix</h1>
+    <div class="container clearfix">
+        <div class="item1 left">float left</div>
+        <div class="item2 right">float right</div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+    <h1>internal sibling clear</h1>
+    <h1> clear:left</h1>
+    <div class="container clearfix">
+        <div class="item1 left">float left</div>
+        <div class="item2 right">float right</div>
+        <p class="clear-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+    <h1> clear:right</h1>
+    <div class="container clearfix">
+        <div class="item3 left">float left</div>
+        <div class="item4 right">float right</div>
+        <p class="clear-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+    <h1> clear:both</h1>
+    <div class="container clearfix">
+        <div class="item3 left">float left</div>
+        <div class="item4 right">float right</div>
+        <p class="clear-both">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.container {
+    border: 2px solid black;
+    width: 300px;
+}
+
+.item1 {
+    padding: 30px 50px;
+    background-color: red;
+    border: 2px solid crimson;
+}
+
+.item2 {
+    padding: 200px 10px;
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+.item3 {
+    padding: 60px 20px;
+    background-color: green;
+    border: 2px solid green;
+}
+.item4 {
+    padding: 20px 30px;
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+
+
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear-right {
+    clear: right;
+}
+
+.clear-left {
+    clear: left;
+}
+.clear-both {
+    clear: both;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

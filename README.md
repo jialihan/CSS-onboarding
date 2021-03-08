@@ -25,3 +25,8 @@ morden css features practice project
 
 <img src="./NameCard/flexbox.png" width="436" height="215">
 
+### 8. css float issue
+- clearfix CSS
+- clear CSS
+
+<img src="./css-float-clear/cover.png">

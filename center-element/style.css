@@ -1,0 +1,107 @@
+.container{
+    width: 200px;
+    height: 150px;
+    background-color: gray;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.use-margin{
+    margin: auto;
+}
+
+.use-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.use-relative{
+    position: relative;
+}
+
+.use-absolute{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.use-relative p {
+    margin-top: 60px;
+}
+.text-item {
+    width: 100%;
+    color:green;
+    font-size: 22px;
+}
+.use-textAlign {
+    text-align: center;
+}
+
+nav a{
+    font-size: 20px;
+
+}
+.equal-padding{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.use-lineHeight {
+    line-height: 150px;
+    /* line-height: 600%; */
+}
+.use-verticalAlign {
+    vertical-align: middle;
+}
+
+.ghost-center {
+    position: relative;
+  }
+  .ghost-center::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+  }
+  .ghost-center p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    margin: 0;
+  }
+  
+  .use-marginVertical {
+      margin: auto 0px;
+  }
+
+  .use-flex-vertical {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 100%;
+  }
+  .use-flex-vertical p{
+      margin-left: 20px;
+  }
+
+  .use-absoluteVertical{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .use-absoluteVertical + p {
+    margin-left: 55px;
+  }

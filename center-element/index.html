@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <h1>Horizontal Center - inline level element </h1>
+    <div>
+        <div class="container ">
+            <div class="text-item use-textAlign">text is centerd!</div>
+            <p> text-align: center </p>
+        </div>
+        <div class="container">
+            <nav class="use-textAlign">
+                <a href="#0">One</a>
+                <a href="#0">Two</a>
+                <a href="#0">Three</a>
+                <a href="#0">Four</a>
+            </nav>
+            <p> text-align: center </p>
+        </div>
+    </div>
+    <h1>Horizontal Center - block level element </h1>
+    <div>
+        <div class="container">
+            <div class="item use-margin"></div>
+            <p> margin: auto </p>
+        </div>
+        <div class="container">
+            <div class="use-flex">
+                <div class="item"></div>
+            </div>
+            <p> flexbox</p>
+        </div>
+        <div class="container use-relative">
+            <div class="item use-absolute"></div>
+            <p> position: absolute<br />left: 0<br />translateX(-50%)</p>
+        </div>
+    </div>
+
+    <h1>Vertical Center - inline level element </h1>
+    <div>
+        <div class="container">
+            <div class="text-item equal-padding">text is centerd!</div>
+            <p> equal padding <br />top & bottom </p>
+        </div>
+        <div class="container">
+            <nav class="equal-padding">
+                <a href="#0">One</a>
+                <a href="#0">Two</a>
+                <a href="#0">Three</a>
+                <a href="#0">Four</a>
+            </nav>
+            <p> equal padding <br />top & bottom </p>
+        </div>
+        <div class="container">
+            <div class="text-item use-lineHeight">text is centerd!</div>
+            <p> line-height on text</p>
+        </div>
+        <div class="container ghost-center">
+            <p>I'm vertically centered multiple lines of text.</p>
+            <p> ::before <br>inline-block <br>vertical middle</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Vertical Center - block level element </h1>
+        <div>
+            <div class="container">
+                <div class="item use-marginVertical"></div>
+                <p> margin: auto <br> cannot work !!!</p>
+            </div>
+            <div class="container">
+                <div class="use-flex-vertical">
+                    <div class="item"></div>
+                    <p> flexbox</p>
+                </div>
+
+            </div>
+            <div class="container use-relative">
+                <div class="item use-absoluteVertical"></div>
+                <p> position: absolute<br />top: 50%<br />translateY(-50%)</p>
+            </div>
+        </div>
+
+
+</html>

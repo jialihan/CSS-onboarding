@@ -30,3 +30,8 @@ morden css features practice project
 - clear CSS
 
 <img src="./css-float-clear/cover.png">
+
+
+### 9. css center issue
+
+<img src="./center-element/cover.png">

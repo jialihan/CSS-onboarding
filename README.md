@@ -34,4 +34,4 @@ morden css features practice project
 
 ### 9. css center issue
 
-<img src="./center-element/cover.png">
+<img src="./center-element/cover.png" width="419" height="502">

@@ -69,19 +69,19 @@ nav a{
 .ghost-center {
     position: relative;
   }
-  .ghost-center::before {
+.ghost-center::before {
     content: " ";
     display: inline-block;
     height: 100%;
     width: 1%;
     vertical-align: middle;
   }
-  .ghost-center p{
+.ghost-center p{
     display: inline-block;
     vertical-align: middle;
     width: 150px;
     margin: 0;
-  }
+}
   
   .use-marginVertical {
       margin: auto 0px;

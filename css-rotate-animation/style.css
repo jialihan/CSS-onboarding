@@ -1,0 +1,247 @@
+.row{
+    display: flex;
+    justify-content:center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+.container p{
+     font-size: 20px;
+}
+.card {
+    padding: 60px 40px;
+    background-color: red;
+    font-size: 40px;
+}
+/************************************************/
+/* 2D rotation */
+/************************************************/
+  .rotate360-2D{
+    animation: rotation1 4s infinite linear;
+  }
+  
+  @keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/************************************************/
+/* Transform origin */
+/************************************************/
+.bottom-center {
+   transform-origin: bottom center;
+}
+
+/************************************************/
+/* Rotate X */
+/************************************************/
+.r0-90{
+    animation: rotation2 4s infinite linear;
+}
+  
+  @keyframes rotation2 {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(90deg);
+    }
+  }
+  
+  .r90-180{
+      animation: rotation3 4s 4s infinite linear;
+  }
+  
+  @keyframes rotation3 {
+    from {
+      transform: rotateX(90deg);
+    }
+    to {
+      transform: rotateX(180deg);
+    }
+  }
+  
+  .r180-270{
+      animation: rotation5 4s 8s infinite linear;
+  }
+  
+  @keyframes rotation5 {
+    from {
+      transform: rotateX(180deg);
+    }
+    to {
+      transform: rotateX(270deg);
+    }
+  }
+  
+  .r-0-359{
+      animation: rotation4 16s infinite linear;
+  }
+  
+  @keyframes rotation4 {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(359deg);
+    }
+  }
+  
+  .r-270-359{
+      animation: rotation6 4s 12s infinite linear;
+  }
+  
+  @keyframes rotation6 {
+    from {
+      transform: rotateX(270deg);
+    }
+    to {
+      transform: rotateX(359deg);
+    }
+  }
+  
+/************************************************/
+  /* rotate Y */
+/************************************************/
+  .y0-90{
+      animation: rotation7 4s infinite linear;
+  }
+  
+  @keyframes rotation7 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(90deg);
+    }
+  }
+  
+  
+  .y90-180{
+      animation: rotation8 6s infinite linear;
+  }
+  
+  @keyframes rotation8 {
+    from {
+      transform: rotateY(90deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  .y180-270{
+      animation: rotation9 6s infinite linear;
+  }
+  
+  @keyframes rotation9 {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(270deg);
+    }
+  }
+  
+  .y-0-359{
+      animation: rotation10 12s infinite linear;
+  }
+  
+  @keyframes rotation10 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+  
+  .y-270-359{
+      animation: rotation11 6s infinite linear;
+  }
+  
+  @keyframes rotation11 {
+    from {
+      transform: rotateY(270deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+  
+  /*****************************/
+  /* rotate Z */
+  /*****************************/
+  .z0-90{
+      animation: rotation12 4s infinite linear;
+  }
+  
+  @keyframes rotation12 {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(90deg);
+    }
+  }
+  
+  
+  .z90-180{
+      animation: rotation13 6s infinite linear;
+  }
+  
+  @keyframes rotation13 {
+    from {
+      transform: rotateZ(90deg);
+    }
+    to {
+      transform: rotateZ(180deg);
+    }
+  }
+  
+  .z180-270{
+      animation: rotation14 6s infinite linear;
+  }
+  
+  @keyframes rotation14 {
+    from {
+      transform: rotateZ(180deg);
+    }
+    to {
+      transform: rotateZ(270deg);
+    }
+  }
+  
+  .z-0-359{
+      animation: rotation15 12s infinite linear;
+  }
+  
+  @keyframes rotation15 {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(359deg);
+    }
+  }
+  
+  .z-270-359{
+      animation: rotation16 6s infinite linear;
+  }
+  
+  @keyframes rotation16 {
+    from {
+      transform: rotateZ(270deg);
+    }
+    to {
+      transform: rotateZ(359deg);
+    }
+  }

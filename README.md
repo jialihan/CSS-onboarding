@@ -40,3 +40,12 @@ morden css features practice project
 
 <img src="./css-rotate-animation/rotate3d.gif" width="490" height="409" />
 
+### 11. Gradient Border - CSS
+- :before
+- :after
+- filter: blur();
+- linear-gradient(angle, color1, color2);
+- absolute position
+
+<img src="./gradient-boarder/cover.png" width="574" height="231" />
+

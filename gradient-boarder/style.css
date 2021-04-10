@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+/********************** Style Container and Box ****************************/
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container .box{
+    position: relative;
+    color: white;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.3s;
+}
+.container .box:hover{
+    transform: translateY(-20px);
+}
+
+/******************** Style Background and Border *************************/
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg,yellow, #ff0058);
+}
+.container .box:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg,yellow, #ff0058);
+    filter: blur(30px);
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after {
+    background: linear-gradient(315deg, #4dff03, #03a9f4);
+}
+
+/* fill the content area with background to make only the border left */
+.container .box span {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+/********************** Style Content *****************/
+.container .box .content{
+    position: relative;
+    z-index: 2;
+    padding: 20px 40px;
+    text-align: center;
+    height: 80%;
+}
+.container .box .content h2 {
+   margin-bottom: 30px;
+}
+
+.container .box .content p {
+    font-size: 20px;
+}
+.container .box .content button {
+    background:rgba(255, 255, 255, 0.911);
+    border-radius: 10px;
+    color: black;
+    padding:10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}

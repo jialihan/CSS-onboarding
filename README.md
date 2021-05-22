@@ -52,5 +52,6 @@ morden css features practice project
 ### 12. Two ways for box move - JS & CSS
 - JS time interval to control position
 - CSS animation attribute
+    Callout: set the position to be `absolute` to reduce dom reflow for other elements.
 
 <img src="./box-move/cover.gif" />

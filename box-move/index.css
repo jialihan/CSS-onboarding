@@ -5,6 +5,13 @@
     position: relative;
   }
 
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+}
+
 /**
 * time: 2s
 * distance: 400px

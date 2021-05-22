@@ -53,4 +53,4 @@ morden css features practice project
 - JS time interval to control position
 - CSS animation attribute
 
-<img src="./box-move/conver.gif" />
+<img src="./box-move/cover.gif" />

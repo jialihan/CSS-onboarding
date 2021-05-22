@@ -49,3 +49,8 @@ morden css features practice project
 
 <img src="./gradient-boarder/cover.png" width="574" height="231" />
 
+### 12. Two ways for box move - JS & CSS
+- JS time interval to control position
+- CSS animation attribute
+
+<img src="./box-move/conver.gif" />

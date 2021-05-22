@@ -1,0 +1,24 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+  }
+
+/**
+* time: 2s
+* distance: 400px
+*/
+.move {
+  animation: run-left-to-right 2s linear;
+}
+
+@keyframes run-left-to-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 400px;
+  }
+  
+}

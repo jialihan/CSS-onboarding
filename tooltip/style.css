@@ -1,0 +1,43 @@
+.tooltip {
+  padding: 4px 4px;
+  background-color: blue;
+  position: relative;
+  width: 100px;
+  color: white;
+  text-align: center;
+}
+
+.tooltip::before {
+  content: attr(data-content);
+  position: absolute;
+  color: black;
+  padding: 4px;
+  width: 200px;
+  background-color: pink;
+
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+
+  opacity: 0;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+}
+
+/* Arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  border: 10px solid pink;
+  border-color: pink transparent transparent transparent;
+  opacity: 0;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}

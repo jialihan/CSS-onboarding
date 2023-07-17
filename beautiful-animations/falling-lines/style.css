@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  aspect-ratio: 1/1;
+  background: #0f0;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 3px #0f0, 0 0 50px #0f0;
+  border-radius: 50%;
+  animation: falldown 5s linear forwards;
+}
+@keyframes falldown {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  /* let the line cross the center of the circle */
+  left: 25%;
+  width: 50%;
+
+  opacity: 0.5;
+  height: 100vh;
+  background: linear-gradient(#0f0, transparent);
+}

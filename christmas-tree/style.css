@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #233343;
+  overflow: hidden;
+  /* enable 3D */
+  transform-style: preserve-3d;
+  /* the z=0 plane and the user in order to give a 3D-positioned element some perspective. */
+  perspective: 1200px;
+}
+
+#tree {
+  /* dev debug only */
+  /* border: 1px solid red; */
+  width: 800px;
+  height: 400px;
+  position: relative;
+  /* enable 3D */
+  transform-style: preserve-3d;
+  /* exec animations: rotate the tree  */
+  animation: spin 2s linear infinite;
+}
+
+.tree-light {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: 50%;
+  /* vertically arrange each point  */
+  bottom: calc(var(--y) * 1%);
+  transform: translate(-50%, -50%) rotateY(calc(var(--rotate, 0) * 1deg))
+    translate3d(0, 0, calc(var(--radius, 0) * 8px));
+  /* animation: name | duration | delay */
+  animation: flash calc(var(--speed) * 1s) calc(var(--delay) * 1s) infinite,
+    appear 0.5s calc(var(--appear) * 0.5s);
+}
+
+#star {
+  width: 32px;
+  height: 32px;
+  /* add color on the border: ; */
+  stroke: #f5e0a3;
+  stroke-dasharray: 1000 1000;
+  filter: drop-shadow(0 0 10px #fcf1cf);
+  /* center the star */
+  left: 50%;
+  position: absolute;
+  /* put on the top of the tree */
+  bottom: 100%;
+  transform: translate(-50%, 0);
+  /* exec animation: prop | duration | delay */
+  animation: stroke 1s calc((var(--delay) * 0.95) * 0.05s) backwards;
+}
+/**
+* animate appear and hide
+*/
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**
+* animate color of each point
+*/
+@keyframes flash {
+  0% {
+    background-color: rgb(237, 220, 160);
+  }
+  20% {
+    background-color: rgb(229, 173, 51);
+  }
+  40% {
+    background-color: rgb(95, 193, 223);
+  }
+  60% {
+    background-color: #78e7a8;
+  }
+  80% {
+    background-color: rgb(239, 153, 218);
+  }
+  100% {
+    background-color: rgb(234, 63, 200);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes stroke {
+  from {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* Adding christmas text */
+.text {
+  margin-top: 60px;
+  font-size: 50px;
+  font-style: italic;
+  position: relative;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(233, 249, 251),
+    rgb(242, 200, 242),
+    rgb(240, 169, 234),
+    rgb(243, 99, 166)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fadingEffect {
+  background-color: #233343;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  animation: flyInLeft 3.5s linear infinite;
+}
+
+@keyframes flyInLeft {
+  0% {
+    width: 100%;
+  }
+  40% {
+    width: 0%;
+  }
+  60% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
